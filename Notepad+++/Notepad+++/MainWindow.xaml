@@ -1,0 +1,46 @@
+﻿<Window x:Class="Notepad___.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Notepad+++" Height="350" Width="525" Icon="notepad+++.ico">
+    <Grid>
+
+        <Menu>
+            <MenuItem Header="_Plik">
+                <MenuItem Header="_Nowy" Name="new" Click="new_Click"/>
+                <MenuItem Header="_Otwórz..." Name="open" Click="open_Click"/>
+                <MenuItem Header="_Zapisz" Name="save" Click="save_Click"/>
+                <MenuItem Header="_Zapisz jako..." Name="save2" Click="save2_Click"/>
+                <Separator/>
+                <MenuItem Header="_Ustawienia strony..."/>
+                <MenuItem Header="_Drukuj..."/>
+                <Separator/>
+                <MenuItem Header="_Zamknij"/>
+            </MenuItem>
+            <MenuItem Header="_Edycja">
+                <MenuItem Header="_Cofnij"/>
+                <Separator/>
+                <MenuItem Header="_Wytnij" Command="Cut"/>
+                <MenuItem Header="_Kopiuj" Command="Copy"/>
+                <MenuItem Header="_Wklej" Command="Paste"/>
+                <MenuItem Header="_Usuń" Command="Delete"/>
+                <Separator/>
+                <MenuItem Header="_Znajdź..."/>
+                <MenuItem Header="_Znajdź następny"/>
+                <MenuItem Header="_Zamień..."/>
+                <MenuItem Header="_Przejdź do..."/>
+                <Separator/>
+                <MenuItem Header="_Zaznacz wszystko" Command="SelectAll"/>
+                <MenuItem Header="_Wstaw datę i godzinę"/>
+            </MenuItem>
+            <MenuItem Header="_Format">
+                <MenuItem Header="_Zawijanie wierszy" IsCheckable="True"/>
+                <MenuItem Header="_Czcionka..."/>
+            </MenuItem>
+            <MenuItem Header="_Widok">
+                <MenuItem Header="_Pasek stanu"/>
+            </MenuItem>
+            <MenuItem Header="_Informacje"/>
+        </Menu>
+        <TextBox Margin="10,25,10,10" TextWrapping="Wrap" AcceptsReturn="True" Name="textField"/>
+    </Grid>
+</Window>
